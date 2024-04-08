@@ -1,4 +1,6 @@
 function showConfirmationModal(e) {
+  if (e.detail.path === "/locations/suggested") return;
+
   e.preventDefault();
 
   const action = e.detail.elt.dataset.action;
